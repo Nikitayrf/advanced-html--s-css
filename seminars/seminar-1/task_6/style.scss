@@ -1,0 +1,66 @@
+@import "vars";
+@import "mixins";
+
+%font-style {
+  font-family: sans-serif;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+.center {
+  margin-left: calc(50% - $screenWidth/2);
+  margin-right: calc(50% - $screenWidth/2);
+}
+.header_one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $colorMain;
+}
+//the preprocessor word color
+.header_greeting {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  .header_greeting_color {
+    color: $colorSite;
+  }
+}
+.nav {
+  display: flex;
+  justify-content: start;
+  gap: $gap;
+
+  &__link {
+    text-decoration: none;
+    @extend %font-style;
+  }
+  &__text {
+    color: $colorMain;
+  }
+  img {
+    width: 100%;
+  }
+}
+.modify--class {
+  text-align: center;
+}
+.content {
+  display: flex;
+  gap: $gap;
+
+  @include flex;
+
+  &__item {
+    width: calc($screenWidth / 4);
+    border: $borderMain;
+    height: 200px;
+  }
+}
