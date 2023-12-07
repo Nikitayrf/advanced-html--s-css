@@ -1,0 +1,19 @@
+$max_width_container: 1200px;
+$color_text: #8a2be2;
+
+* {
+margin: 0;
+padding: 0;
+}
+
+.container {
+max-width: $max_width_container;
+margin: 0 auto;
+}
+
+.colored-title {
+color: $color_text;
+}
+
+/* Comment */
+// Comment 2

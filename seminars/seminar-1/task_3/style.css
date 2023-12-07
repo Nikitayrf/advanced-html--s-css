@@ -1,0 +1,18 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.nav__link {
+  text-decoration: none;
+}
+.nav__text {
+  color: red;
+}
+.nav img {
+  width: 100%;
+}
+
+.modify--class {
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
