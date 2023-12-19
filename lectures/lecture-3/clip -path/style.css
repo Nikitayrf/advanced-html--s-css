@@ -1,0 +1,23 @@
+.item {
+    height: 200px;
+    background-color: #ccc;
+}
+
+.item1 {
+    clip-path: circle(150px at 5px 200px);
+    background-image: url(https://img.freepik.com/free-photo/blue-foaming-waves-in-north-beach-in-nazare-portugal_1268-15934.jpg?w=1060&t=st=1702938808~exp=1702939408~hmac=9ada16584302d12f039079208ee4b1def87fede27282a1a082ed0e17a7b625aa);
+    background-size: cover;
+}
+
+.item2 {
+    clip-path: ellipse(130px 140px at 20% 30%);
+}
+
+.item3 {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.item4 {
+    clip-path: polygon(50% 10%, 12% 100%, 30% 40%, 0% 25%);
+    background-image: url(https://img.freepik.com/free-photo/blue-foaming-waves-in-north-beach-in-nazare-portugal_1268-15934.jpg?w=1060&t=st=1702938808~exp=1702939408~hmac=9ada16584302d12f039079208ee4b1def87fede27282a1a082ed0e17a7b625aa);
+}

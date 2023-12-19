@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.content {
+    background-color: #ccc;
+    min-height: 700px;
+}
+
+.menu {
+    position: sticky;
+    width: 20%;
+    top: 20%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+
+.main {
+    margin-left: 20%;
+}
+
+.parallax {
+    min-height: 250px;
+    background-image: url(https://img.freepik.com/free-photo/blue-foaming-waves-in-north-beach-in-nazare-portugal_1268-15934.jpg?w=1060&t=st=1702938808~exp=1702939408~hmac=9ada16584302d12f039079208ee4b1def87fede27282a1a082ed0e17a7b625aa);
+    background-attachment: fixed;
+}
