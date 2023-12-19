@@ -1,0 +1,9 @@
+.box {
+    width: 200px;
+    height: 200px;
+	font-size: 40px;
+	color: #FFF;
+	-webkit-text-stroke: 1px;
+	-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
