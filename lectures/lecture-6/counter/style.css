@@ -1,0 +1,107 @@
+@keyframes duck-fly-1 {
+  0% {
+    left: -50px;
+    top: 73vh;
+  }
+  50% {
+    left: 30vw;
+    top: 82vh;
+  }
+  100% {
+    left: 100vw;
+    top: 20vh;
+  }
+}
+@keyframes duck-fly-2 {
+  0% {
+    left: -50px;
+    top: 70vh;
+  }
+  50% {
+    left: 19vw;
+    top: 61vh;
+  }
+  100% {
+    left: 100vw;
+    top: 81vh;
+  }
+}
+@keyframes duck-fly-3 {
+  0% {
+    left: -50px;
+    top: 58vh;
+  }
+  50% {
+    left: 4vw;
+    top: 24vh;
+  }
+  100% {
+    left: 100vw;
+    top: 83vh;
+  }
+}
+@keyframes duck-fly-4 {
+  0% {
+    left: -50px;
+    top: 48vh;
+  }
+  50% {
+    left: 53vw;
+    top: 23vh;
+  }
+  100% {
+    left: 100vw;
+    top: 63vh;
+  }
+}
+.body {
+  counter-reset: count;
+  height: 100vh;
+  margin: 0;
+  background-image: url("img/bg-duck-hunting.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.duck-check {
+  position: absolute;
+  visibility: hidden;
+  left: -999999px;
+}
+.duck-check:checked {
+  counter-increment: count;
+}
+.duck-check:checked ~ label {
+  display: none;
+}
+
+.counter-info {
+  position: absolute;
+  top: 14px;
+  right: 24px;
+}
+.counter-info::before {
+  content: counter(count);
+}
+
+.duck {
+  position: absolute;
+}
+.duck__img {
+  width: 50px;
+}
+.duck_1 {
+  animation: duck-fly-1 5s ease-in 1s both;
+}
+.duck_2 {
+  animation: duck-fly-2 5s ease-in 2s both;
+}
+.duck_3 {
+  animation: duck-fly-3 5s ease-in 3s both;
+}
+.duck_4 {
+  animation: duck-fly-4 5s ease-in 4s both;
+}/*# sourceMappingURL=style.css.map */

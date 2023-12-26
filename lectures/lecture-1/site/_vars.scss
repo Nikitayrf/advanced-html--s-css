@@ -3,4 +3,4 @@ $widthSite: 1140px;
 $backBlock: #222;
 $colorText: #000;
 $gapGrid: 30px;
-$thirdSide: ($widthSite - $gapGrid * 2) / 3;
+$thirdSide: calc(($widthSite - $gapGrid * 2) / 3);

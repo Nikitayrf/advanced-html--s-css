@@ -6,7 +6,7 @@ $border: 1px solid #000;
   display: flex;
   gap: $gap;
   &__item {
-    width: $widthContainer / 4;
+    width: calc($widthContainer / 4);
     border: $border;
     height: 200px;
   }
