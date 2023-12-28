@@ -17,19 +17,25 @@ a {
   margin-right: calc(50% - 600px);
 }
 
-.header_one {
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.header__one {
   display: flex;
   justify-content: center;
   align-items: center;
   color: cornflowerblue;
 }
-
-.header_greeting {
+.header__greeting {
   display: flex;
   text-align: center;
   justify-content: center;
 }
-.header_greeting .header_greeting_color {
+.header__greeting_color {
   color: #8a2be2;
 }
 
@@ -37,6 +43,7 @@ a {
   display: flex;
   justify-content: start;
   gap: 16px;
+  margin-bottom: 20px;
 }
 .nav__link {
   text-decoration: none;
@@ -47,8 +54,7 @@ a {
 .nav img {
   width: 100%;
 }
-
-.modify--class {
+.nav .modify--class {
   text-align: center;
 }
 

@@ -374,8 +374,8 @@ a {
   border: none !important;
 }
 .invitation__form_button:hover {
-  color: #f16d7f;
-  background-color: #fff;
+  border: none;
+  box-shadow: 7px 7px 7px rgba(241, 109, 127, 0.69);
 }
 
 @media (max-width: 1024px) {

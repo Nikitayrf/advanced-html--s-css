@@ -1,1 +1,8 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav__link {
+  color: red;
+}/*# sourceMappingURL=style.css.map */

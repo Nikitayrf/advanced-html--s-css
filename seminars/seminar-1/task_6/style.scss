@@ -1,15 +1,12 @@
 @import "vars";
 @import "mixins";
-
-%font-style {
-  font-family: sans-serif;
-  font-style: normal;
-}
+@import "inheritance";
 
 * {
   margin: 0;
   padding: 0;
 }
+
 a {
   text-decoration: none;
 }
@@ -18,25 +15,37 @@ a {
   margin-left: calc(50% - $screenWidth/2);
   margin-right: calc(50% - $screenWidth/2);
 }
-.header_one {
+.container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  color: $colorMain;
+  gap: $gap;
 }
-//the preprocessor word color
-.header_greeting {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  .header_greeting_color {
-    color: $colorSite;
+
+.header {
+  &__one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $colorMain;
+  }
+
+  &__greeting {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    &_color {
+      color: $colorSite;
+    }
   }
 }
+
 .nav {
   display: flex;
   justify-content: start;
   gap: $gap;
+  margin-bottom: 20px;
 
   &__link {
     text-decoration: none;
@@ -48,9 +57,9 @@ a {
   img {
     width: 100%;
   }
-}
-.modify--class {
-  text-align: center;
+  .modify--class {
+    text-align: center;
+  }
 }
 .content {
   display: flex;
