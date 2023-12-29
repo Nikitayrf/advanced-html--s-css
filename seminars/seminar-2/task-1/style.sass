@@ -1,0 +1,13 @@
+summary
+    list-style-type: none
+    // display: block
+    font-size: 20px
+    font-weight: bold
+
+summary::before
+    content: '\2192 '
+    padding-right: 5px
+
+
+details[open] > summary::before
+    content: '\2193 '

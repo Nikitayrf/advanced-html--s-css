@@ -1,0 +1,15 @@
+@charset "UTF-8";
+summary {
+  list-style-type: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+summary::before {
+  content: "→";
+  padding-right: 5px;
+}
+
+details[open] > summary::before {
+  content: "↓";
+}/*# sourceMappingURL=style.css.map */
