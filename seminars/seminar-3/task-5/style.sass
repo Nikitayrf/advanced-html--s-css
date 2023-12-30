@@ -1,0 +1,24 @@
+$colorSelectSite: #f16d7f
+
+a
+    text-decoration: none
+
+.top-head__heading
+    color: $colorSelectSite
+    font-size: 24px
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+
+.breadcrumbs__link
+    color: #636363
+    font-size: 14px
+    font-style: normal
+    font-weight: 300
+    line-height: normal
+    &:not(:last-child)::after
+        content: " /"
+
+    &_site
+        color: $colorSelectSite
+        font-weight: 700

@@ -1,0 +1,26 @@
+.border {
+  margin-bottom: 20px;
+  width: 200px;
+  height: 100px;
+  border: 10px solid green;
+  -o-border-image: url(img/border_round.png) 30 space;
+     border-image: url(img/border_round.png) 30 space;
+}
+
+.border_gradient {
+  margin-bottom: 20px;
+  width: 200px;
+  height: 100px;
+  border: 10px solid transparent;
+  -o-border-image: linear-gradient(to right, transparent 0%, #ADF2F7 100%);
+     border-image: linear-gradient(to right, transparent 0%, #ADF2F7 100%);
+  border-image-slice: 1;
+}
+
+.border_envelope {
+  width: 200px;
+  height: 100px;
+  border: 10px solid transparent;
+  -o-border-image: 10 repeating-linear-gradient(45deg, #A7CECC, #A7CECC 10px, transparent 10px, transparent 20px, #F8463F 20px, #F8463F 30px, transparent 30px, transparent 40px);
+     border-image: 10 repeating-linear-gradient(45deg, #A7CECC, #A7CECC 10px, transparent 10px, transparent 20px, #F8463F 20px, #F8463F 30px, transparent 30px, transparent 40px);
+}/*# sourceMappingURL=style.css.map */
